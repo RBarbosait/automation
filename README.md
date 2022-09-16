@@ -1,4 +1,5 @@
 # automation
+El código se encuentra en el branch > master
 Este repositorio corresponde a un script de test automatizado para las funcionalidades> login, crear tablero y crear lista de trello.
 Se utilizó Maven, Selenium, Java y TestNG. Este último fue útil para crear un screenshot en caso de que el resultado del test sea FAILURE.
 Las screenshots se guardan en > /SeleniumPOMSample/Screenshots
