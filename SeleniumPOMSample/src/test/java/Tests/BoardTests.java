@@ -35,7 +35,7 @@ public class BoardTests {
 		
 		//headless-------------
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless");
+		//options.addArguments("--headless");
 		driver= new ChromeDriver(options);
 		//---------------------
 		

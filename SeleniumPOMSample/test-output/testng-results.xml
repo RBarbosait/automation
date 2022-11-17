@@ -1,64 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-14T14:44:39 UYT" name="Default suite" finished-at="2022-09-14T14:45:20 UYT" duration-ms="41163">
+  <suite started-at="2022-11-16T15:49:36 UYT" name="Default suite" finished-at="2022-11-16T15:50:12 UYT" duration-ms="35873">
     <groups>
     </groups>
-    <test started-at="2022-09-14T14:44:39 UYT" name="Default test" finished-at="2022-09-14T14:45:20 UYT" duration-ms="41163">
-      <class name="Tests.BoardTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.BoardTests@3d51f06e]" started-at="2022-09-14T14:44:39 UYT" name="setup" finished-at="2022-09-14T14:44:44 UYT" duration-ms="5515" status="PASS">
+    <test started-at="2022-11-16T15:49:36 UYT" name="Default test" finished-at="2022-11-16T15:50:12 UYT" duration-ms="35873">
+      <class name="Tests.WallethubTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.WallethubTests@72f926e6]" started-at="2022-11-16T15:49:36 UYT" name="setup" finished-at="2022-11-16T15:49:50 UYT" duration-ms="14028" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLoginOk()[pri:1, instance:Tests.BoardTests@3d51f06e]" started-at="2022-09-14T14:44:44 UYT" name="testLoginOk" finished-at="2022-09-14T14:44:53 UYT" duration-ms="8934" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginOk -->
-        <test-method is-config="true" signature="takeScs(org.testng.ITestResult)[pri:0, instance:Tests.BoardTests@3d51f06e]" started-at="2022-09-14T14:44:53 UYT" name="takeScs" finished-at="2022-09-14T14:44:53 UYT" duration-ms="123" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testLoginOk status=SUCCESS method=BoardTests.testLoginOk()[pri:1, instance:Tests.BoardTests@3d51f06e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScs -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.BoardTests@3d51f06e]" started-at="2022-09-14T14:44:53 UYT" name="setup" finished-at="2022-09-14T14:44:55 UYT" duration-ms="1784" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateBoard()[pri:2, instance:Tests.BoardTests@3d51f06e]" started-at="2022-09-14T14:44:55 UYT" name="testCreateBoard" finished-at="2022-09-14T14:45:06 UYT" duration-ms="11289" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateBoard -->
-        <test-method is-config="true" signature="takeScs(org.testng.ITestResult)[pri:0, instance:Tests.BoardTests@3d51f06e]" started-at="2022-09-14T14:45:06 UYT" name="takeScs" finished-at="2022-09-14T14:45:07 UYT" duration-ms="118" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testCreateBoard status=SUCCESS method=BoardTests.testCreateBoard()[pri:2, instance:Tests.BoardTests@3d51f06e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScs -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.BoardTests@3d51f06e]" started-at="2022-09-14T14:45:07 UYT" name="setup" finished-at="2022-09-14T14:45:08 UYT" duration-ms="1779" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCreateList()[pri:3, instance:Tests.BoardTests@3d51f06e]" started-at="2022-09-14T14:45:08 UYT" name="testCreateList" finished-at="2022-09-14T14:45:20 UYT" duration-ms="11355" status="FAIL">
-          <exception class="junit.framework.ComparisonFailure">
+        <test-method signature="testPostComment()[pri:3, instance:Tests.WallethubTests@72f926e6]" started-at="2022-11-16T15:49:50 UYT" name="testPostComment" finished-at="2022-11-16T15:50:12 UYT" duration-ms="21791" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[expected:<[ListaTest]> but was:<[]>]]>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='scroller']/main/div/div/div[1]/h4 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LAPTOP-ENM17V9N', ip: '10.10.1.82', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\59895\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53787}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53787/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 909f3bb49ffb52eedf17b57a02b330b2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[junit.framework.ComparisonFailure: expected:<[ListaTest]> but was:<[]>
-at junit.framework.Assert.assertEquals(Assert.java:100)
-at junit.framework.Assert.assertEquals(Assert.java:107)
-at Tests.BoardTests.testCreateList(BoardTests.java:84)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='scroller']/main/div/div/div[1]/h4 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LAPTOP-ENM17V9N', ip: '10.10.1.82', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\59895\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53787}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53787/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 909f3bb49ffb52eedf17b57a02b330b2
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at Pages.WallethubPage.postComment(WallethubPage.java:270)
+at Tests.WallethubTests.testPostComment(WallethubTests.java:151)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -89,22 +62,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- junit.framework.ComparisonFailure -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCreateList -->
-        <test-method is-config="true" signature="takeScs(org.testng.ITestResult)[pri:0, instance:Tests.BoardTests@3d51f06e]" started-at="2022-09-14T14:45:20 UYT" name="takeScs" finished-at="2022-09-14T14:45:20 UYT" duration-ms="230" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testCreateList status=FAILURE method=BoardTests.testCreateList()[pri:3, instance:Tests.BoardTests@3d51f06e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScs -->
-      </class> <!-- Tests.BoardTests -->
+        </test-method> <!-- testPostComment -->
+      </class> <!-- Tests.WallethubTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
